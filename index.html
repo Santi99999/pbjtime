@@ -2,9 +2,15 @@
   <body>
     <h1>its peanut butter jelly time!</h1>
     <img src="dance-dancing.gif" width="400" height="400">gif</img>
-  <audio autoplay>
+  <audio id="pbjmusic">
   <source src="yt1s.com - Peanut Butter Jelly Time.mp3" type="audio/mpeg">
   sorry, you don't have a peanut butter jelly time!
   </audio>
+  <script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById("pbjmusic");
+    audio.play();
+  });
+</script>
   </body>
 </html>
